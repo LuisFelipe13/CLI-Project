@@ -1,3 +1,4 @@
+require "colorize"
 class CLI
   def welcome
     puts "Welcome to TweetTrend, the only command line app you'll ever need to see what's trending!"
@@ -11,7 +12,7 @@ class CLI
     if @response == Topic.check_for_topic(@response) # => check to see if users topic is available
       Topic.show_tweets(@response) # => returns an array of the trending tweets from the users topic
     else
-      puts "Sorry that's not a topic we have info on at the moment, please try again"
+      puts "Sorry that's not a topic we have info on at the moment, please try again".red
       welcome
     end
   end

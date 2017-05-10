@@ -14,7 +14,7 @@ class Topic < ActiveRecord::Base
     tweet_array = Trending.where(topic_id: id[0]).pluck(:tweet_id)
     answer = Tweet.find(tweet_array)
     tweets = answer.map do |t|
-              "user: #{t.user} tweet: #{t.tweet}"
+              "user: #{t.user} | tweet: #{t.tweet} | likes: #{t.likes} | #{t.date}"
             end
     puts tweets
   end
