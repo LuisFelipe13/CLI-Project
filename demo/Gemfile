@@ -4,6 +4,7 @@ source "https://rubygems.org"
 gem "sinatra-activerecord"
 gem "sqlite3"
 gem "pry"
+gem "yaml"
 gem "require_all"
 gem "twitter"
 gem 'colorize', '~> 0.8.1'
