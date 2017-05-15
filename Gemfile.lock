@@ -15,6 +15,7 @@ GEM
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (8.0.0)
+    artii (2.1.2)
     buftok (0.2.0)
     coderay (1.1.1)
     colorize (0.8.1)
@@ -24,6 +25,7 @@ GEM
     equalizer (0.0.11)
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
+    geocoder (1.4.3)
     http (2.2.2)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -81,7 +83,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  artii (~> 2.1, >= 2.1.1)
   colorize (~> 0.8.1)
+  geocoder
   pry
   require_all
   sinatra-activerecord

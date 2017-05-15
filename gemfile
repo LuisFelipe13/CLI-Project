@@ -6,4 +6,6 @@ gem "sqlite3"
 gem "pry"
 gem "require_all"
 gem "twitter"
+gem "geocoder"
 gem 'colorize', '~> 0.8.1'
+gem 'artii', '~> 2.1', '>= 2.1.1'
